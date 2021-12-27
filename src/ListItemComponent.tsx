@@ -5,6 +5,8 @@ import "./ListItemComponent.scss";
 import {Link} from "react-router-dom";
 import {cartService} from "./CartService";
 import {cartItemFromShopItem} from "./CartItem";
+import {SingleItemComponent} from "./SingleItemComponent";
+import {DataService, DataServiceInstance} from "./DataService";
 
 /**
  * Входные параметры компоненты "элемент списка на главной странице"
@@ -27,7 +29,7 @@ export function ListItemComponent(props: ListItemComponentProps) {
     }
 
     return (
-        <Card className={"list-item"} style={{ width: '18rem' }}>
+        <Card className={"list-item"} style={{ width: '18rem', height: 500 }}>
             <Card.Img style={{height: 242}} variant="top" src={item.imageSrc} />
             <Card.Body>
                 <Card.Title>
@@ -38,8 +40,13 @@ export function ListItemComponent(props: ListItemComponentProps) {
                 <Card.Text>
                     {item.brief}
                 </Card.Text>
-                <span><b>${item.price}</b></span>
-                <div className="add-to-cart"><Button onClick={() => addToCart(item)} variant="success">Add to cart</Button></div>
+
+                <div className="add-to-cart" >
+                    <Link to={"/item/" + item.id}>
+                    <button  type="button" className="btn btn-info" >Learn more</button>
+                    </Link>
+                </div>
+                    {/*<Button onClick={() => addToCart(item)} variant="success">Learn more</Button></div>*/}
             </Card.Body>
         </Card>
     );

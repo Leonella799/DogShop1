@@ -1,5 +1,6 @@
 .cart-item {
   margin: 5px;
+  height: 200px;
 
   img {
     object-fit: cover;
@@ -7,4 +8,12 @@
     width: 100%;
   }
 
+  .btn {
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    bottom: 10px;
+    //left: 0px;
+    right: 5px;
+  }
 }

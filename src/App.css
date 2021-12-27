@@ -35,4 +35,10 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+
+.signup-content-end {
+  margin: 0 10px;
+
 }

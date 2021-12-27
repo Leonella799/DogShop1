@@ -6,8 +6,10 @@ import {SingleItemComponent} from "./SingleItemComponent";
 import {CartComponent} from "./CartComponent";
 import {Button, Container, Nav, Navbar} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
-import {faOpencart} from "@fortawesome/free-brands-svg-icons";
+import {faUser} from "@fortawesome/free-solid-svg-icons";
+import './signup_form'
+import Login from "./signup_form";
+// import {fa-user-o} from "@fortawesome/free-brands-svg-icons";
 
 /**
  * Главная компонента приложения.
@@ -20,20 +22,32 @@ export function App() {
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">Academy</Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
                         <Nav.Link href="/">Home</Nav.Link>
                     </Nav>
+
                     <Nav className="justify-content-end">
+                    {/*Ссылка для перехода в корзину*/}
+                    <Link to={"/cart"}>
+                        {/*Кнопка корзины*/}
+                        <button type="button" className="btn btn-outline-secondary">My courses</button>
+                    </Link>
+
+                </Nav>
+                    <Nav className="signup-content-end">
+                        <Link to={"/sign-in"}>
                         {/*Ссылка для перехода в корзину*/}
-                        <Link to={"/cart"}>
+
                             {/*Кнопка корзины*/}
                             <Button variant={"primary"}>
                                 {/*Иконка с корзиной*/}
-                                <FontAwesomeIcon icon={faOpencart} />
+                                <FontAwesomeIcon icon={faUser} />
                             </Button>
                         </Link>
+
+
                     </Nav>
                 </Container>
             </Navbar>
@@ -46,6 +60,7 @@ export function App() {
                 <Route path={""} element={<MainComponent/>}/>
                 <Route path={"item/:itemId"} element={<SingleItemComponent/>}/>
                 <Route path={"cart"} element={<CartComponent/>}/>
+                <Route path={"sign-in"} element={<Login/>}/>
             </Routes>
         </BrowserRouter>
     );

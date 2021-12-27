@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {ShopItem} from "./ShopItem";
 import {DataServiceInstance} from "./DataService";
 import {CartItem} from "./CartItem";
@@ -57,7 +57,10 @@ export function CartItemComponent(props: CartItemComponentProps) {
                                 // Price: ${itemPrice}
                                 }
 
-                                Price: ${props.cartItem.quantity * (state.item?.price ?? 0)}
+                                Topic: {}
+                            </div>
+                            <div>
+                                <button type="button" className="btn btn-outline-primary">Start learning</button>
                             </div>
                         </Card.Text>
                     </Card.Body>

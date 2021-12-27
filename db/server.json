@@ -1,77 +1,88 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 3,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "quantity": 1
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "title": "Foo bar",
+      "title": "Understand the basics of code",
       "price": 100,
       "color": "red",
-      "imageSrc": "https://farm8.staticflickr.com/7062/7053816915_8a0a65c3c7_b.jpg",
-      "brief": "Lorem ipsum dolor sit amet",
+      "imageSrc": "https://www.my-itspecialist.com/wp-content/uploads/2018/09/main1.png",
+      "brief": "Get an introduction to code, find out how it works, what it can do, and how it can benefit you.",
       "description": [
         {
           "type": "text",
-          "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
-        },
-        {
-          "type": "checkbox",
-          "name": "check1",
-          "variant": [
-            "asdlasldlsa",
-            "aspqqp",
-            "qweewe"
-          ]
-        },
-        {
-          "type": "image",
-          "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg"
-        },
-        {
-          "type": "checkbox",
-          "name": "check2",
-          "variant": [
-            "Test",
-            "Foo",
-            "Bar"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "dasdasd asljdaslj djasnd kjahskd as"
+          "text": "Code powers everything from laptops to vending machines to cars. But how does it work? In these free course videos, you'll learn what code is, why so many coding languages exist, and how they are matched to achieve specific tasks. Most importantly, you’ll learn why having a basic understanding of code could be beneficial for you."
         }
       ]
     },
     {
       "id": 2,
-      "title": "Lorem ipsum",
+      "title": "Understand the basics of machine learning",
       "color": "red",
       "price": 123,
-      "imageSrc": "https://sobakainfo.ru/wp-content/uploads/2016/11/6-14.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://itproger.com/img/main_page/mobile-main.svg",
+      "brief": "Discover some of the ways machine learning is helping improve lives and grow businesses.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Whether it's recommending movies or helping scientists find breakthrough cures, machine learning is a powerful new tool with untold potential. In the Understanding the basics of machine learning course videos, we'll explore what these technologies are and how they can be applied in real life to help businesses grow."
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Dolor",
+      "title": "Get a business online",
       "color": "blue",
       "price": 500,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/5/4/e/54ef2ae25328982d8ec84de9bb018bde.jpeg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://cdn.greatstep.se/wordpressfiles/2020/09/TDV_M01_09-1024x784.jpg",
+      "brief": "Find out how to build a digital presence, sell to customers online, and stay safe from hackers.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Start our free course to discover what it takes to start and run a successful business online. You'll also learn how to build a digital presence, use e-commerce, keep a business safe from hackers, and get noticed locally."
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Sit",
+      "title": "Fundamentals of digital marketing",
       "color": "black",
       "price": 600,
-      "imageSrc": "https://lapkins.ru/upload/uf/55b/55b9fa60a5dbc4abe05fa7abe6564d6b.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://school.kontur.ru/Files/Modules/Discipline/8_il_medium.svg?t=1599122518",
+      "brief": "Learn the fundamentals of digital marketing to help your business or career.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University. There are 26 modules to explore, all created by Google trainers, packed full of practical exercises and real-world examples to help you turn knowledge into action."
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "Amet",
+      "title": "Content, Advertising & Social IMC",
       "color": "black",
       "price": 1000,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://amdg.ru/upload/resize_cache/iblock/344/1500_1500_1/344c1875b48eb9059792957cdcc0a710.jpg",
+      "brief": "Find out how marketers are successfully navigating today's media landscape. ",
+      "description": [
+        {
+          "type": "text",
+          "text": "Want your content to go viral? Who doesn't! It takes a thoughtful, integrated approach to make content that stands out in our increasingly oversaturated world. In this fourth course of the Social Marketing Specialisation - \"Content, Advertising & Social IMC\" - you will learn how marketers are successfully navigating today's media landscape. You will learn why developing engaging content for your audience is an essential component in effective social marketing. A panel of experts will unlock the paid/owned/earned media riddle and replace it with an integrated who/what/where approach that utilises platform-specific messaging to grow your market share. This course also includes an overview of the integrated marketing communications strategy for social and how it is being deployed around the globe, as well as gamification tips to keep your audiences coming back for more. In addition, you will learn the secrets to advertising on Facebook and other social sites."
+        }
+      ]
     }
   ],
   "comments": [

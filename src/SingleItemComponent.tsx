@@ -154,7 +154,7 @@ export function SingleItemComponent() {
                         <p>Brief: {item.brief}</p>
                         <h5>Description</h5>
                         {renderDescriptions(item.description)}
-                        <span><b>${item.price}</b></span> <Button onClick={() => addToCart()} variant={"success"}>Add to cart</Button>
+                        <Button onClick={() => addToCart()} variant={"success"}>Enroll</Button>
                     </Col>
                 </Row>
 
